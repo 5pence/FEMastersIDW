@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <br /><br /><br />
+      <div class="row">
+        <div class="col s4 right-align answer" id="result">30</div>
+      </div>
+      <div class="row">
+        <div
+          class="col s2 center-align greyish"
+          id="wipe"
+          onclick="wipeHandler()"
+        >
+          C
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="backArrow"
+          onclick="backArrowHandler()"
+        >
+          &#8592;
+        </div>
+        <div class="col s1 center-align orangey" id="divide">&divide;</div>
+      </div>
+      <div class="row">
+        <div
+          class="col s1 center-align greyish"
+          id="sevem"
+          onclick="numberHandler(7)"
+        >
+          7
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="eight"
+          onclick="numberHandler(8)"
+        >
+          8
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="nine"
+          onclick="numberHandler(9)"
+        >
+          9
+        </div>
+        <div class="col s1 center-align orangey" id="multiply">&times;</div>
+      </div>
+      <div class="row">
+        <div
+          class="col s1 center-align greyish"
+          id="four"
+          onclick="numberHandler(4)"
+        >
+          4
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="five"
+          onclick="numberHandler(5)"
+        >
+          5
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="six"
+          onclick="numberHandler(6)"
+        >
+          6
+        </div>
+        <div class="col s1 center-align orangey" id="minus">&minus;</div>
+      </div>
+      <div class="row">
+        <div
+          class="col s1 center-align greyish"
+          id="one"
+          onclick="numberHandler(1)"
+        >
+          1
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="two"
+          onclick="numberHandler(2)"
+        >
+          2
+        </div>
+        <div
+          class="col s1 center-align greyish"
+          id="three"
+          onclick="numberHandler(3)"
+        >
+          3
+        </div>
+        <div class="col s1 center-align orangey" id="add">&plus;</div>
+      </div>
+      <div class="row">
+        <div
+          class="col s3 center-align greyish"
+          id="zero"
+          onclick="numberHandler(0)"
+        >
+          0
+        </div>
+        <div class="col s1 center-align orangey" id="equals">&equals;</div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/calc.js"></script>
+</html>

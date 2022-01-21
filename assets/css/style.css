@@ -1,0 +1,27 @@
+.col {
+  border: 1px black solid;
+  font-size: 2.5rem;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.answer {
+  background-color: black;
+  color: white;
+}
+
+.greyish {
+  background-color: rgb(214, 214, 214);
+}
+.greyish:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.orangey {
+  background-color: rgb(253, 194, 83);
+}
+.orangey:hover {
+  background-color: rgb(253, 214, 103);
+}
