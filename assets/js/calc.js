@@ -1,6 +1,6 @@
 //event listeners
 let result = document.getElementById("result");
-let storedNumber = parseInt(result.innerText);
+let storedNumber;
 let operation;
 
 wipeHandler = () => {
@@ -18,12 +18,26 @@ numberHandler = number => {
   result.innerText = initial + number;
 }
 
-divideHandler = () => {
+operationHandler = operationType => {
   storedNumber = parseInt(result.innerText);
-  operation = "divide"
+  operation = operationType;
   wipeHandler();
 }
 
 equalsHandler = () => {
-  
+  let initial = parseInt(result.innerText);
+  let resultant;
+  if (operation === 'divide') {
+    resultant = storedNumber / initial;
+  }
+  if (operation === 'multiply') {
+    resultant = storedNumber * initial;
+  }
+  if (operation === 'minus') {
+    resultant = storedNumber - initial;
+  }
+  if (operation === 'add') {
+    resultant = storedNumber + initial;
+  }
+  result.innerText = resultant.toString();
 }
